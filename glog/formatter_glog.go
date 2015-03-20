@@ -16,6 +16,10 @@ func NewGlogFormatter() *GlogFormatter {
 	return &GlogFormatter{make([]byte, 64)}
 }
 
+func New() *GlogFormatter {
+	return &GlogFormatter{make([]byte, 64)}
+}
+
 // This will always be true.
 func (f *GlogFormatter) ShouldRuntimeCaller() bool {
 	return true

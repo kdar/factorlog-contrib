@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"bitbucket.org/kardianos/osext"
+	"github.com/kardianos/osext"
 	log "github.com/kdar/factorlog"
 )
 
@@ -41,6 +41,10 @@ func NewGELFFormatter() *GELFFormatter {
 	}
 
 	return f
+}
+
+func New() *GELFFormatter {
+	return NewGELFFormatter()
 }
 
 // ShouldRuntimeCaller will always return true.
